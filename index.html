@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Нёрдс</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/logo_nerds.svg" alt="NERDS">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="studio.html">СТУДИЯ</a></li>
+					<li><a href="catalog.html">МАГАЗИН</a></li>
+					<li><a href="clients.html">КЛИЕНТЫ</a></li>
+					<li><a href="contacts.html">КОНТАКТЫ</a></li>
+				</ul>
+				
+				<ul class="user-navigation">
+					<li><a class="shop-cart">КАРЗИНА</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="container">
+			<h1 class="visually-hidden">Дизайн студия Nёrds</h1><!--Скрытй заголовок-->
+			
+			<!--Здесь будет слайдер, состоящий из следующего-->
+			<!------------------НАЧАЛО СЛАЙДЕРА------------------>
+			<!--slider_1-->
+			<section class="slider">
+				<h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
+				<p class="slider-description">Математически выверенный дийзайн для вашего сайта и мобильного приложения</p><!--Возможно стоит разделить <br>-->
+				<a class="button-slider" href="#">УЗНАТЬ БОЛЬШЕ</a>
+				<img src="img/logo-slider_1.svg">
+			</section>
+			
+			<!--slider_2-->
+			<section class="slider">
+				<h2 class="slider-title">Любим математику как никто другой</h2>
+				<p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций</p><!--Возможно стоит разделить <br>-->
+				<a class="button button-slider" href="#">УЗНАТЬ БОЛЬШЕ</a>
+				<img src="img/logo-slider_2.svg">
+				
+			</section>
+			<!--slider_3-->
+			<section class="slider-">
+				<h2 class="slider-title">Только ночь, только хардкор</h2>
+				<p class="slider-description">Работаем днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p><!--Возможно стоит разделить <br>-->
+				<a class="button-slider" href="#">УЗНАТЬ БОЛЬШЕ</a>
+				<img src="img/logo-slider_3.svg">
+			</section>
+			<!------------------КОНЕЦ СЛАЙДЕРА------------------>
+			
+			<section class="products">
+				<h2 class="visually-hidden">Продукты студии Nёrds</h2><!--Скрытй заголовок-->
+				<ul class="products-list">
+					<li class="products-item">
+						<h3 class="products-title">ВЕБ-САЙТЫ</h3>
+						<p class="products-discription">Мир никогда не буетпрежним после того как увидит ваш сайт</p>
+						<img src="img/logo-products_1.svg" alt="Веб-сайты">
+						<a class="button button-products" href="#">ЗАКАЗАТЬ</a>
+					</li>
+					<li class="products-item">
+						<h3 class="products-title">ПРИЛОЖЕНИЯ</h3>
+						<p class="products-discription">Покорите топ-10 приложений в AppStore и Google Play</p>
+						<img src="img/logo-products_2.svg" alt="Приложения">
+						<a class="button button-products" href="#">ЗАКАЗАТЬ</a>
+					</li>
+					<li class="products-item">
+						<h3 class="products-title">ПРЕЗЕНТАЦИИ</h3>
+						<p class="products-discription">Вы даже не подозреваете, насколько вы изумительны!</p>
+						<img src="img/logo-products_3.svg" alt="Презентации">
+						<a class="button button-products" href="#">ЗАКАЗАТЬ</a>
+					</li>
+				</ul>
+			</section>
+			
+			<section class="about_us">
+				<h2 class="visually-hidden">О нас</h2><!--Скрытй заголовок-->
+				<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<p><strong>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</strong></p>
+				<ul>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+				<img src="logo_nerds2.svg" alt="Логтип Nёrds">
+				<!--НАЧАЛО БЛОКА-->
+				<p><strong>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</strong></p>
+				<ul>
+					<li>
+						<b>146%</b>
+						<p>Уровень самоотачи</p>
+					</li>
+					<li>
+						<b>100%</b>
+						<p>Соблюдение сроков</p>
+					</li>
+					<li>
+						<b>50%</b>
+						<p>Минимальная предоплата</p>
+					</li>
+				</ul>
+				<!--КОНЕЦ БЛОКА-->
+				<!--Или этот блок лучше сделать таблицей?-->
+			</section>
+			
+			<h2 class="visually-hidden">Полезные ссылки</h2><!--Скрытй заголовок-->
+			<section class="useful_likns">
+				<ul class="useful_likns-list">
+					<li class="useful_likns-item">
+						<a href="https://htmlacademy.ru">
+							<img src="logo_htmlacademy.svg" alt="Логтип HTML Academy">
+						</a>
+					</li>
+					<li class="useful_likns-item">
+						<a href="https://Barbershop.ru">
+							<img src="logo_barbershop.svg" alt="Логтип Barbershop">
+						</a>
+					</li>
+					<li class="useful_likns-item">
+						<a href="https://pink.ru">
+							<img src="logo_pink.svg" alt="Логтип PiNK">
+						</a>
+					</li>
+					<li class="useful_likns-item">
+						<a href="https://mishka.ru">
+							<img src="logo_mishka.svg" alt="Логтип MiSHKA">
+						</a>
+					</li>
+				</ul>
+			</section>
+			
+			<!--Здесь будет карта-->
+			<h2 class="visually-hidden">КАРТА</h2><!--Скрытй заголовок-->
+			
+			<section class="feedback">
+				<h2 class="visually-hidden">Обратная связь</h2>
+				<h3 class="feedback-title">NЁRDS DESIGN STUDIO</h3>
+				<p class="feedback-description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+				<p class="feedback-description">тел. +7 (812) 275-75-75</p>
+				<a class="button feedback-button" href="#">НАПИШИТЕ НАМ</a>
+				<!--Здесь будет форма-->
+			</section>
+		</main>
+		
+		<footer class="main-footer">
+			<h2 class="visually-hidden">Конец страницы, социальная часть</h2><!--Скрытй заголовок-->
+			
+			<b>Давайте дружить, это выгодно!</b>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+			
+			<section class="social">
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="https://vk.com">
+							<img src="img/social_vk" alt="VK">
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://facebook.com">
+							<img src="img/social_" alt="facebook">
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://instagram.com">
+							<img src="img/social_" alt="instagram">
+						</a>
+					</li>
+				</ul>
+			</section>
+		</footer>
+	</body>
 </html>
