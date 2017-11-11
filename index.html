@@ -19,8 +19,8 @@
 				
 				<ul class="user-navigation">
 					<li>
-						<img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА">
-						<a class="shop-cart">КАРЗИНА</a>
+						<a href="shop-cart.html"><img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА"></a>
+						<a href="shop-cart.html">КАРЗИНА</a>
 					</li>
 				</ul>
 			</nav>
@@ -35,7 +35,9 @@
 			<section class="slider">
 				<h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
 				<p class="slider-description">Математически выверенный дийзайн для вашего сайта и мобильного приложения</p><!--Возможно стоит разделить <br>-->
-				<a class="button-slider" href="#">УЗНАТЬ БОЛЬШЕ</a>
+				<button class="buttons buttons-slider">
+					<a href="#">УЗНАТЬ БОЛЬШЕ</a>
+				</button>
 				<img src="img/nerds-index-slide1.png" width="638px" height="413px">
 			</section>
 			
@@ -43,7 +45,9 @@
 			<section class="slider">
 				<h2 class="slider-title">Любим математику как никто другой</h2>
 				<p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций</p><!--Возможно стоит разделить <br>-->
-				<a class="button button-slider" href="#">УЗНАТЬ БОЛЬШЕ</a>
+				<button class="buttons buttons-slider">
+					<a href="#">УЗНАТЬ БОЛЬШЕ</a>
+				</button>
 				<img src="img/nerds-index-slide2.png" width="638px" height="413px">
 				
 			</section>
@@ -51,7 +55,9 @@
 			<section class="slider">
 				<h2 class="slider-title">Только ночь, только хардкор</h2>
 				<p class="slider-description">Работаем днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p><!--Возможно стоит разделить <br>-->
-				<a class="button-slider" href="#">УЗНАТЬ БОЛЬШЕ</a>
+				<button class="buttons buttons-slider">
+					<a href="#">УЗНАТЬ БОЛЬШЕ</a>
+				</button>
 				<img src="img/nerds-index-slide3.png" width="638px" height="413px">
 			</section>
 			<!------------------КОНЕЦ СЛАЙДЕРА------------------>
@@ -63,19 +69,25 @@
 						<h3 class="products-title">ВЕБ-САЙТЫ</h3>
 						<p class="products-discription">Мир никогда не буетпрежним после того как увидит ваш сайт</p>
 						<img src="img/illustration-1.jpg" width="300px" height="146px" alt="Веб-сайты">
-						<a class="button button-products" href="#">ЗАКАЗАТЬ</a>
+						<button class="buttons buttons-products">
+							<a href="#">ЗАКАЗАТЬ</a>
+						</button>
 					</li>
 					<li class="products-item">
 						<h3 class="products-title">ПРИЛОЖЕНИЯ</h3>
 						<p class="products-discription">Покорите топ-10 приложений в AppStore и Google Play</p>
 						<img src="img/illustration-2.jpg" width="300px" height="146px" alt="Приложения">
-						<a class="button button-products" href="#">ЗАКАЗАТЬ</a>
+						<button class="buttons buttons-products">
+							<a href="#">ЗАКАЗАТЬ</a>
+						</button>
 					</li>
 					<li class="products-item">
 						<h3 class="products-title">ПРЕЗЕНТАЦИИ</h3>
 						<p class="products-discription">Вы даже не подозреваете, насколько вы изумительны!</p>
 						<img src="img/illustration-3.jpg" width="300px" height="146px" alt="Презентации">
-						<a class="button button-products" href="#">ЗАКАЗАТЬ</a>
+						<button class="buttons buttons-products">
+							<a href="#">ЗАКАЗАТЬ</a>
+						</button>
 					</li>
 				</ul>
 			</section>
@@ -149,9 +161,37 @@
 				<h3 class="feedback-title">NЁRDS DESIGN STUDIO</h3>
 				<p class="feedback-description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 				<p class="feedback-description">тел. +7 (812) 275-75-75</p>
-				<a class="button feedback-button" href="#">НАПИШИТЕ НАМ</a>
+				<button class="buttons buttons-feedback">
+					<a href="#">НАПИШИТЕ НАМ</a>
+				</button>
 				<!--Здесь будет форма-->
-				<img src="img/close-cross.svg" width="21px" height="21px" alt="X">
+				<form>
+					<h2 class="form-title">Напишите нам</h2>
+					<p>
+						<label for="sender">
+							Ваше имя:
+						</label>
+						<input id="sender" type="text" placeholder="Представьтесь, пожалуйста">
+					</p>
+					<p>
+						<label for="sender-email">
+							Ваш e-mail:
+						</label>
+						<input id="sender-email" type="text" placeholder="Для отправки ответа">
+					</p>
+					<p>
+						<label for="letters-text">
+							Текст письма
+						</label>
+						<input id="letters-text" type="textarea" placeholder="В свободной форме">
+					</p>
+					<button type="submit" class="buttons buttons-send">
+						Отправить
+					</button>	
+					<button class="buttons buttons-close">
+						<img src="img/close-cross.svg" width="21px" height="21px" alt="Закрыть форму">
+					</button>
+				</form>
 			</section>
 		</main>
 		

@@ -19,8 +19,8 @@
 				
 				<ul class="user-navigation">
 					<li>
-						<img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА">
-						<a class="shop-cart">КАРЗИНА</a>
+						<a href="shop-cart.html"><img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА"></a>
+						<a href="shop-cart.html">КАРЗИНА</a>
 					</li>
 				</ul>
 			</nav>
@@ -34,79 +34,94 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры</h2><!--Скрытй заголовок-->
 				<h3 class="filters-title">СТОИМОСТЬ</h3>
-				<ul>
-					<li>
-						<img src="img/price-filter.png" width="260px" height="85px" alt="price-filter">
-					</li>
-					<li>
-						<p>ОТ</p>
-					</li>
-					<li>
-						0
-					</li>
-					<li>
-						<p>ДО</p>
-					</li>
-					<li>
-						<p>15000</p>
-					</li>
-				</ul>
-				<h3 class="filters-title">СЕТКА</h3>
-				<ul>
-					<li>
-						<img src="img/radio-on.svg" width="25px" height="25px" alt="radio-on">
-						<p>Адаптивная</p>
-					</li>
-					<li>
-						<img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
-						<p>Фиксированная</p>
-					</li>
-					<li>
-						<img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
-						<p>Резиновая</p>
-					</li>
-				</ul>
-				<h3 class="filters-title">ОСОБЕННОСТИ</h3>
-				<ul>
-					<li>
-						<img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
-						<p>Слайдер</p>
-					</li>
-					<li>
-						<img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
-						<p>Блок приимуществ</p>
-					</li>
-					<li>
-						<img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
-						<p>Новости</p>
-					</li>
-					<li>
-						<img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
-						<p>Галерея</p>
-					</li>
-					<li>
-						<img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
-						<p>Карзина</p>
-					</li>
-				</ul>
-				<h3 class="filters-title">СОРТИРОВАТЬ</h3>
-				<ul>
-					<li>
-						<p>ПО ЦЕНЕ</p>
-					</li>
-					<li>
-						<p>ПО ТИПУ</p>
-					</li>
-					<li>
-						<p>ПО НАЗВАНИЮ</p>
-					</li>
-					<li>
-						<img src="img/icon-up-dir.svg" width="11px" height="10px" alt="icon-up-dir">
-					</li>
-					<li>
-						<img src="img/icon-down-dir.svg" width="11px" height="10px" alt="icon-down-dir">
-					</li>
-				</ul>
+				<form>
+					<img src="img/price-filter.png" width="260px" height="85px" alt="price-filter">
+					<label for="min-price">
+						ОТ
+					</label>
+					<input id="min-price" type="text" value="0">
+				
+					<label for="max-price">
+						ДО
+					</label>
+					<input id="max-price" type="text" value="15000">
+					
+					<h3 class="filters-title">СЕТКА</h3>
+					<ul>
+						<li>
+							<input type="radio" name="grid" id="adaptive" checked>
+							<label for="adaptive">Адаптивная</label>
+							<!--img src="img/radio-on.svg" width="25px" height="25px" alt="radio-on">
+							<p>Адаптивная</p-->
+						</li>
+						<li>
+							<input type="radio" name="grid" id="fixed">
+							<label for="fixed">Фиксированная</label>
+							<!--img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
+							<p>Фиксированная</p-->
+						</li>
+						<li>
+							<input type="radio" name="grid" id="rubber">
+							<label for="rubber">Резиновая</label>
+							<!--img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
+							<p>Резиновая</p-->
+						</li>
+					</ul>
+					<h3 class="filters-title">ОСОБЕННОСТИ</h3>
+					<ul>
+						<li>
+							<input type="checkbox" name="grid" id="slider" checked>
+							<label for="slider">Слайдер</label>
+							<!--img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
+							<p>Слайдер</p-->
+						</li>
+						<li>
+							<input type="checkbox" name="grid" id="block_advantages">
+							<label for="block_advantages">Блок преимуществ</label>
+							<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
+							<p>Блок преимуществ</p-->
+						</li>
+						<li>
+							<input type="checkbox" name="grid" id="news" checked>
+							<label for="news">Новости</label>
+							<!--img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
+							<p>Новости</p-->
+						</li>
+						<li>
+							<input type="checkbox" name="grid" id="gallery">
+							<label for="gallery">Галерея</label>
+							<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
+							<p>Галерея</p-->
+						</li>
+						<li>
+							<input type="checkbox" name="grid" id="cart">
+							<label for="cart">Корзина</label>
+							<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
+							<p>Корзина</p-->
+						</li>
+					</ul>
+				</form>
+				
+				<form>
+					<h3 class="filters-title">СОРТИРОВАТЬ</h3>
+					<ul>
+						<li>
+							<p>ПО ЦЕНЕ</p>
+						</li>
+						<li>
+							<p>ПО ТИПУ</p>
+						</li>
+						<li>
+							<p>ПО НАЗВАНИЮ</p>
+						</li>
+						<li>
+							<img src="img/icon-up-dir.svg" width="11px" height="10px" alt="icon-up-dir">
+						</li>
+						<li>
+							<img src="img/icon-down-dir.svg" width="11px" height="10px" alt="icon-down-dir">
+						</li>
+					</ul>
+				</form>
 			</section>
 			<!--КОНЕЦ-->
 			
@@ -122,7 +137,9 @@
 						<div class="catalog-item-current">
 							<h3 class="catalog-item-title">SEDONA</h3>
 							<p class="catalog-item-description">Информационный сайт для туристов</p>
-							<a class="button catalog-item-button" href="#">9900 РУБ.</a>
+							<button class="buttons buttons-of-catalog">
+								9900 РУБ.
+							</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -134,7 +151,9 @@
 						<div class="catalog-item-current">
 							<h3 class="catalog-item-title">PINK APP</h3>
 							<p class="catalog-item-description">Продуктовый	лендинг приложений для iOS и Android</p>
-							<a class="button catalog-item-button" href="#">9900 РУБ.</a>
+							<button class="buttons buttons-of-catalog">
+								9900 РУБ.
+							</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -146,7 +165,9 @@
 						<div class="catalog-item-current">
 							<h3 class="catalog-item-title">BARBERSHOP</h3>
 							<p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
-							<a class="button catalog-item-button" href="#">9900 РУБ.</a>
+							<button class="buttons buttons-of-catalog">
+								9900 РУБ.
+							</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -158,7 +179,9 @@
 						<div class="catalog-item-current">
 							<h3 class="catalog-item-title">MISHKA</h3>
 							<p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
-							<a class="button catalog-item-button" href="#">9900 РУБ.</a>
+							<button class="buttons buttons-of-catalog">
+								9900 РУБ.
+							</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -170,7 +193,9 @@
 						<div class="catalog-item-current">
 							<h3 class="catalog-item-title">A PLUS</h3>
 							<p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
-							<a class="button catalog-item-button" href="#">9900 РУБ.</a>
+							<button class="buttons buttons-of-catalog">
+								9900 РУБ.
+							</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -182,7 +207,9 @@
 						<div class="catalog-item-current">
 							<h3 class="catalog-item-title">КВАСТ</h3>
 							<p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
-							<a class="button catalog-item-button" href="#">9900 РУБ.</a>
+							<button class="buttons buttons-of-catalog">
+								9900 РУБ.
+							</button>
 						</div>
 					</li>
 				</ul>
@@ -218,9 +245,36 @@
 				<h3 class="feedback-title">NЁRDS DESIGN STUDIO</h3>
 				<p class="feedback-description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 				<p class="feedback-description">тел. +7 (812) 275-75-75</p>
-				<a class="button feedback-button" href="#">НАПИШИТЕ НАМ</a>
+				<button class="buttons buttons-feedback">
+					<a href="#">НАПИШИТЕ НАМ</a>
+				</button>
 				<!--Здесь будет форма-->
-				<img src="img/close-cross.svg" width="21px" height="21px" alt="X">
+				<form>
+					<h2 class="form-title">Напишите нам</h2>
+					<p>
+						<label for="sender">
+							Ваше имя:
+						</label>
+						<input id="sender" type="text" placeholder="Представьтесь, пожалуйста">
+					</p>
+					<p>
+						<label for="sender-email">
+							Ваш e-mail:
+						</label>
+						<input id="sender-email" type="text" placeholder="Для отправки ответа">
+					</p>
+					<p>
+						<label for="letters-text">
+							Текст письма
+						</label>
+						<input id="letters-text" type="textarea" placeholder="В свободной форме">
+					</p>
+					<button type="submit" class="buttons buttons-send">
+						Отправить
+					</button>	
+					<button class="buttons buttons-close">
+						<img src="img/close-cross.svg" width="21px" height="21px" alt="Закрыть форму">
+					</button>
 			</section>
 		</main>
 		
