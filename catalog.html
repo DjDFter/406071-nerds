@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -19,8 +22,8 @@
 				
 				<ul class="user-navigation">
 					<li>
-						<a href="shop-cart.html"><img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА"></a>
-						<a href="shop-cart.html">КАРЗИНА</a>
+						<a href="shop-cart.html"><img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА">
+						КАРЗИНА</a>
 					</li>
 				</ul>
 			</nav>
@@ -33,97 +36,102 @@
 			<!--НАЧАЛО-->
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры</h2><!--Скрытй заголовок-->
-				<h3 class="filters-title">СТОИМОСТЬ</h3>
-				<form>
-					<img src="img/price-filter.png" width="260px" height="85px" alt="price-filter">
-					<label for="min-price">
-						ОТ
-					</label>
-					<input id="min-price" type="text" value="0">
 				
-					<label for="max-price">
-						ДО
-					</label>
-					<input id="max-price" type="text" value="15000">
-				</form>
+				<form>
+					<fieldset>
+						<h3 class="filters-title">СТОИМОСТЬ</h3>
+						<img src="img/price-filter.png" width="260px" height="85px" alt="price-filter">
+						<label for="min-price">
+							ОТ
+						</label>
+						<input id="min-price" type="text" value="0">
+				
+						<label for="max-price">
+							ДО
+						</label>
+						<input id="max-price" type="text" value="15000">
+					</fieldset>
 
-				<form>
-					<h3 class="filters-title">СЕТКА</h3>
-					<ul>
-						<li>
-							<input type="radio" name="grid" id="adaptive" checked>
-							<label for="adaptive">Адаптивная</label>
-							<!--img src="img/radio-on.svg" width="25px" height="25px" alt="radio-on">
-							<p>Адаптивная</p-->
-						</li>
-						<li>
-							<input type="radio" name="grid" id="fixed">
-							<label for="fixed">Фиксированная</label>
-							<!--img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
-							<p>Фиксированная</p-->
-						</li>
-						<li>
-							<input type="radio" name="grid" id="rubber">
-							<label for="rubber">Резиновая</label>
-							<!--img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
-							<p>Резиновая</p-->
-						</li>
-					</ul>
+					<fieldset>
+						<h3 class="filters-title">СЕТКА</h3>
+						<ul>
+							<li>
+								<input type="radio" name="grid" id="adaptive" checked>
+								<label for="adaptive">Адаптивная</label>
+								<!--img src="img/radio-on.svg" width="25px" height="25px" alt="radio-on">
+								<p>Адаптивная</p-->
+							</li>
+							<li>
+								<input type="radio" name="grid" id="fixed">
+								<label for="fixed">Фиксированная</label>
+								<!--img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
+								<p>Фиксированная</p-->
+							</li>
+							<li>
+								<input type="radio" name="grid" id="rubber">
+								<label for="rubber">Резиновая</label>
+								<!--img src="img/radio-off.svg" width="25px" height="25px" alt="radio-off">
+								<p>Резиновая</p-->
+							</li>
+						</ul>
+					</fieldset>
 					
-					<h3 class="filters-title">ОСОБЕННОСТИ</h3>
-					<ul>
-						<li>
-							<input type="checkbox" name="grid" id="slider" checked>
-							<label for="slider">Слайдер</label>
-							<!--img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
-							<p>Слайдер</p-->
-						</li>
-						<li>
-							<input type="checkbox" name="grid" id="block_advantages">
-							<label for="block_advantages">Блок преимуществ</label>
-							<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
-							<p>Блок преимуществ</p-->
-						</li>
-						<li>
-							<input type="checkbox" name="grid" id="news" checked>
-							<label for="news">Новости</label>
-							<!--img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
-							<p>Новости</p-->
-						</li>
-						<li>
-							<input type="checkbox" name="grid" id="gallery">
-							<label for="gallery">Галерея</label>
-							<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
-							<p>Галерея</p-->
-						</li>
-						<li>
-							<input type="checkbox" name="grid" id="cart">
-							<label for="cart">Корзина</label>
-							<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
-							<p>Корзина</p-->
-						</li>
-					</ul>
-				</form>
-				
-				<form>
-					<h3 class="filters-title">СОРТИРОВАТЬ</h3>
-					<ul>
-						<li>
-							<button class="buttons buttons-sort">ПО ЦЕНЕ</button>
-						</li>
-						<li>
-							<button class="buttons buttons-sort">ПО ТИПУ</button>
-						</li>
-						<li>
-							<button class="buttons buttons-sort">ПО НАЗВАНИЮ</button>
-						</li>
-						<li>
-							<button class="buttons buttons-sort"><img src="img/icon-up-dir.svg" width="11px" height="10px" alt="icon-up-dir"></button>
-						</li>
-						<li>
-							<button class="buttons buttons-sort"><img src="img/icon-down-dir.svg" width="11px" height="10px" alt="icon-down-dir"></button>
-						</li>
-					</ul>
+					<fieldset>
+						<h3 class="filters-title">ОСОБЕННОСТИ</h3>
+						<ul>
+							<li>
+								<input type="checkbox" name="grid" id="slider" checked>
+								<label for="slider">Слайдер</label>
+								<!--img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
+								<p>Слайдер</p-->
+							</li>
+							<li>
+								<input type="checkbox" name="grid" id="block_advantages">
+								<label for="block_advantages">Блок преимуществ</label>
+								<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
+								<p>Блок преимуществ</p-->
+							</li>
+							<li>
+								<input type="checkbox" name="grid" id="news" checked>
+								<label for="news">Новости</label>
+								<!--img src="img/checkbox-on.svg" width="27px" height="23px" alt="checkbox-on">
+								<p>Новости</p-->
+							</li>
+							<li>
+								<input type="checkbox" name="grid" id="gallery">
+								<label for="gallery">Галерея</label>
+								<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
+								<p>Галерея</p-->
+							</li>
+							<li>
+								<input type="checkbox" name="grid" id="cart">
+								<label for="cart">Корзина</label>
+								<!--img src="img/checkbox-off.svg" width="23px" height="23px" alt="checkbox-off">
+								<p>Корзина</p-->
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset>
+						<h3 class="filters-title">СОРТИРОВАТЬ</h3>
+						<ul>
+							<li>
+								<a class="buttons buttons-sort">ПО ЦЕНЕ</a>
+							</li>
+							<li>
+								<a class="buttons buttons-sort">ПО ТИПУ</a>
+							</li>
+							<li>
+								<a class="buttons buttons-sort">ПО НАЗВАНИЮ</a>
+							</li>
+							<li>
+								<a class="buttons buttons-sort"><img src="img/icon-up-dir.svg" width="11px" height="10px" alt="icon-up-dir"></a>
+							</li>
+							<li>
+								<a class="buttons buttons-sort"><img src="img/icon-down-dir.svg" width="11px" height="10px" alt="icon-down-dir"></a>
+							</li>
+						</ul>
+					</fieldset>
 				</form>
 				
 			</section>
@@ -223,16 +231,16 @@
 				<h2 class="visually-hidden">Нумерация страницы</h2>
 				<ul class="pagination-list">
 					<li class="pagination-item">
-						<a class="pagination-list-current" href="#">1</a>
+						<a class="buttons pagination-list-current" href="#">1</a>
 					</li>
 					<li class="pagination-item">
-						<a href="#">2</a>
+						<a class="buttons button-pagination" href="#">2</a>
 					</li>
 					<li class="pagination-item">
-						<a href="#">3</a>
+						<a class="buttons button-pagination" href="#">3</a>
 					</li>
 					<li class="pagination-item">
-						<a href="#">СЛЕДУЩАЯ</a>
+						<a class="buttons button-pagination" href="#">СЛЕДУЩАЯ</a>
 					</li>
 				</ul>
 			</section>
@@ -250,11 +258,12 @@
 				<p class="feedback-description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 				<p class="feedback-description">тел. +7 (812) 275-75-75</p>
 				<button class="buttons buttons-feedback">
-					<a href="#">НАПИШИТЕ НАМ</a>
+					НАПИШИТЕ НАМ
 				</button>
+				
 				<!--Здесь будет форма-->
-				<form>
-					<h2 class="form-title">Напишите нам</h2>
+				<form class="send_us">
+					<h2>Напишите нам</h2>
 					<p>
 						<label for="sender">
 							Ваше имя:
@@ -274,11 +283,13 @@
 						<input id="letters-text" type="textarea" placeholder="В свободной форме">
 					</p>
 					<button type="submit" class="buttons buttons-send">
-						Отправить
+						ОТПРАВИТЬ
 					</button>	
-					<button class="buttons buttons-close">
+					<button class="buttons button-close">
 						<img src="img/close-cross.svg" width="21px" height="21px" alt="Закрыть форму">
 					</button>
+				</form>
+				
 			</section>
 		</main>
 		

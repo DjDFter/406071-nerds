@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -19,8 +22,8 @@
 				
 				<ul class="user-navigation">
 					<li>
-						<a href="shop-cart.html"><img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА"></a>
-						<a href="shop-cart.html">КАРЗИНА</a>
+						<a href="shop-cart.html"><img src="img/cart-icon.svg" width="15px" height="15px" alt="КАРЗИНА">
+						КАРЗИНА</a>
 					</li>
 				</ul>
 			</nav>
@@ -63,19 +66,19 @@
 						<h3 class="products-title">ВЕБ-САЙТЫ</h3>
 						<p class="products-discription">Мир никогда не буетпрежним после того как увидит ваш сайт</p>
 						<img src="img/illustration-1.jpg" width="300px" height="146px" alt="Веб-сайты">
-						<a class="buttons buttons-products" href="#">ЗАКАЗАТЬ</a>
+						<a class="buttons button1" href="#">ЗАКАЗАТЬ</a>
 					</li>
 					<li class="products-item">
 						<h3 class="products-title">ПРИЛОЖЕНИЯ</h3>
 						<p class="products-discription">Покорите топ-10 приложений в AppStore и Google Play</p>
 						<img src="img/illustration-2.jpg" width="300px" height="146px" alt="Приложения">
-						<a class="buttons buttons-products" href="#">ЗАКАЗАТЬ</a>
+						<a class="buttons button2" href="#">ЗАКАЗАТЬ</a>
 					</li>
 					<li class="products-item">
 						<h3 class="products-title">ПРЕЗЕНТАЦИИ</h3>
 						<p class="products-discription">Вы даже не подозреваете, насколько вы изумительны!</p>
 						<img src="img/illustration-3.jpg" width="300px" height="146px" alt="Презентации">
-						<a class="buttons buttons-products" href="#">ЗАКАЗАТЬ</a>
+						<a class="buttons button3" href="#">ЗАКАЗАТЬ</a>
 					</li>
 				</ul>
 			</section>
@@ -150,12 +153,12 @@
 				<p class="feedback-description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 				<p class="feedback-description">тел. +7 (812) 275-75-75</p>
 				<button class="buttons buttons-feedback">
-					<a href="#">НАПИШИТЕ НАМ</a>
+					НАПИШИТЕ НАМ
 				</button>
 				
 				<!--Здесь будет форма-->
-				<form>
-					<h2 class="form-title">Напишите нам</h2>
+				<form class="send_us">
+					<h2>Напишите нам</h2>
 					<p>
 						<label for="sender">
 							Ваше имя:
@@ -175,9 +178,9 @@
 						<input id="letters-text" type="textarea" placeholder="В свободной форме">
 					</p>
 					<button type="submit" class="buttons buttons-send">
-						Отправить
+						ОТПРАВИТЬ
 					</button>	
-					<button class="buttons buttons-close">
+					<button class="buttons button-close">
 						<img src="img/close-cross.svg" width="21px" height="21px" alt="Закрыть форму">
 					</button>
 				</form>
