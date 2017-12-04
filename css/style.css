@@ -975,6 +975,8 @@ padding-bottom: 0px;
 }
 .more {
 	position: absolute;
+	max-height: 615px;
+	overflow: hidden;
 	bottom: 4px;
 	color: #000000;
 	opacity: 0;
@@ -1000,6 +1002,8 @@ padding-bottom: 0px;
 }
 .catalog_element_current p {
 	margin-bottom: 30px;
+	max-height: 35px;
+	overflow: hidden;
 }
 .buttons_of_catalog {
 	margin-left: auto;
