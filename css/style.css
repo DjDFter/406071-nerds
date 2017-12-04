@@ -963,7 +963,7 @@ padding-bottom: 0px;
 .catalog li {
 	width: 360px;
 	margin-right: 40px;
-	margin-bottom: 34px;
+	margin-bottom: 31px;
 }
 .catalog li:nth-child(2n) {
 	margin-right: 0px;
@@ -1022,7 +1022,7 @@ padding-bottom: 0px;
 }
 .pagination {
 	/*outline: 1px solid green;*/
-	margin-top: 16px;
+	margin-top: 26px;
 	margin-bottom: 75px;
 }
 .pagination ul {
@@ -1053,6 +1053,7 @@ padding-bottom: 0px;
 }
 .button_next {
 	width: 260px;
+	letter-spacing: 2px;
 }
 .pagination_list_checked,
 .pagination_list_checked:hover,
