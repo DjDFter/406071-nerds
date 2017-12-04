@@ -37,9 +37,8 @@
 		</header>
 		
 		<main class="container">
-			<div class="page_title">
-				<h1>Магазин готовых шаблонов</h1>
-			</div>
+			<h1 class="page_title">
+				Магазин готовых шаблонов</h1>
 			
 			<div class="columns">
 				<form class="left_column" method="post" action="https://echo.htmlacademy.ru">
@@ -82,23 +81,23 @@
 						<legend>ОСОБЕННОСТИ:</legend>
 						<ul>
 							<li class="filter_option">
-								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="grid" id="slider" checked>
+								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="block_sleder" id="slider" checked>
 								<label for="slider">Слайдер</label>
 							</li>
 							<li class="filter_option">
-									<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="grid" id="block_advantages">
+									<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="block_advantages" id="block_advantages">
 								<label for="block_advantages">Блок преимуществ</label>
 							</li>
 							<li class="filter_option">
-								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="grid" id="news" checked>
+								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="block_news" id="news" checked>
 								<label for="news">Новости</label>
 							</li>
 							<li class="filter_option">
-								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="grid" id="gallery">
+								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="block_gallery" id="gallery">
 								<label for="gallery">Галерея</label>
 							</li>
 							<li class="filter_option">
-								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="grid" id="cart">
+								<input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="block_cart" id="cart">
 								<label for="cart">Корзина</label>
 							</li>
 						</ul>
@@ -286,7 +285,7 @@
 						<label for="letter_content">
 							Текст письма:
 						</label>
-						<input id="letter_content" type="text" placeholder="В свободной форме">
+						<textarea id="letter_content" name="user_letter" placeholder="В свободной форме"></textarea>
 					<p>
 				</div>
 				<button type="submit" class="buttons buttons-send">
