@@ -34,8 +34,8 @@ input[type="radio"].visually-hidden {
 }
 .main_header {
 	background-color: #eeeeee;
-	max-width:1440px;
-	margin:0 auto;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 .main-navigation {
 	display: flex;
@@ -65,7 +65,7 @@ input[type="radio"].visually-hidden {
 }
 .site_navigation li {
 	list-style: none;
-	display: blok;
+	display: block;
 }
 .site_navigation a {
 	font-size: 16px;
@@ -102,18 +102,19 @@ input[type="radio"].visually-hidden {
 }
 .shop_cart::before {
 	content: "";
-	width: 18px;
+	width: 17px;
 	height: 18px;
 	position: absolute;
 	top: 6px;
 	left: 0px;
-	background-image: url("../img/cart-icon.svg");
+	background-image: url(../img/cart-icon.svg);
+	background-repeat: no-repeat;
 }
 .container {
 	min-width: 1160px;
 	max-width: 1440px;
 	box-sizing: border-box;
-	margin:0 auto;
+	margin: 0 auto;
 }
 .slider {
 	position: relative;
@@ -166,6 +167,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: -7px;
 	left: 397px;
+	width: 759px;
 }
 .product-1:checked ~ .slider-list .slider-item:nth-child(1) {
 	display: block;
@@ -328,12 +330,12 @@ input[type="radio"].visually-hidden {
 	margin-top: 23px;
 	margin-bottom: 25px;
 }
-.studio_description ul{
+.studio_description ul {
 	margin: 0px;
 	padding: 0px;
 	margin-left: 36px;
 }
-.studio_description li{
+.studio_description li {
 	list-style: none;
 	margin-bottom: 24px;
 	font-size: 16px;
@@ -433,16 +435,17 @@ input[type="radio"].visually-hidden {
 	background-position: 0 41%;
 	margin-top: 75px;
 	min-width: 1160px;
-	max-width:1440px;
+	max-width: 1440px;
 	height: 415px;
 	position: relative;
-	width:100%;
-	margin:0 auto;
+	width: 100%;
+	margin: 0 auto;
 }
 .mark {
 	position: absolute;
 	top: 90px;
 	left: 682px;
+	width: 369px;
 }
 .feedback {
 	position: absolute;
@@ -462,7 +465,7 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 30px;
 }
-.feedback p{
+.feedback p {
 	color: #727578;
 	font-size: 16px;
 	line-height: 18px;
@@ -471,7 +474,7 @@ input[type="radio"].visually-hidden {
 	width: 1160px;
 	display: flex;
 	margin-top: 60px;
-	margin-bottom:30px;
+	margin-bottom: 30px;
 	margin: 0 auto;
 }
 .social_links {
@@ -506,7 +509,7 @@ input[type="radio"].visually-hidden {
 .social_button:active path {
 	fill: #e37376;
 }
-.for_frends {
+.for_friends {
 	width: 560px;
 	min-height: 80px;
 	margin-top: 77px;
@@ -514,11 +517,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 }
-.for_frends b {
+.for_friends b {
 	font-size: 36px;
 	line-height: 36px;
 }
-.for_frends p {
+.for_friends p {
 	font-size: 16px;
 	line-height: 22px;
 	color: #727578;
@@ -541,7 +544,7 @@ input[type="radio"].visually-hidden {
 	font-size: 45px;
 	line-height: 45px;
 }
-.filds_form label {
+.field_form label {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
@@ -752,7 +755,7 @@ input[type="radio"].visually-hidden {
 .filter_option:last-child {
 	margin-bottom: 47px;
 }
-.filter_option label{
+.filter_option label {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
@@ -857,7 +860,7 @@ input[type="radio"].visually-hidden {
 .sort_type {
 	width: 320px;
 }
-.filter_sort ul{
+.filter_sort ul {
 	margin: 0px;
 	margin-top: 2px;
 	padding: 0px;
@@ -867,7 +870,7 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 18px;
 }
-.buttons_sort{
+.buttons_sort {
 	opacity: 0.2;
 }
 .buttons_sort:hover,
@@ -934,6 +937,13 @@ input[type="radio"].visually-hidden {
 }
 .catalog_element_current h3 {
 	padding-top: 25px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 30px;
+	color: #000000;
+}
+.cotalog_element_name {
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 0;
