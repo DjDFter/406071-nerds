@@ -5,15 +5,14 @@ body {
 	margin: auto;
 }
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+	font-size: 16px;
+	font-weight: 400;
 	background-color: #ffffff;
 }
 img {
-	/* max-width: 100%; */
 	height: auto;
 }
 a {
@@ -23,15 +22,12 @@ a {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
 	position: absolute;
-
 	width: 1px;
 	height: 1px;
 	margin: -1px;
 	border: 0;
 	padding: 0;
-
 	white-space: nowrap;
-
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
@@ -42,24 +38,15 @@ input[type="radio"].visually-hidden {
 	margin:0 auto;
 }
 .main-navigation {
-
-display: flex;
-
-margin: auto;
-
-width: 1160px;
-
-padding-bottom: 0px;
-
-/*outline: 1px solid green;*/
+	display: flex;
+	margin: auto;
+	width: 1160px;
+	padding-bottom: 0px;
 }
 .main_logo {
 	width: auto;
-	/* height: auto; */
 	margin-top: 48px;
-	/* margin-left: 140px; */
 	margin-bottom: 0px;
-	/*outline: 1px solid red;*/
 }
 .main_logo:hover,
 .main_logo:focus {
@@ -71,17 +58,14 @@ padding-bottom: 0px;
 .site_navigation {
 	width: 671px;
 	display: flex;
-	/* flex-wrap: wrap; */
 	padding: 0px;
 	margin-left: 200px;
 	margin-top: 75px;
-	/*outline: 1px solid red;*/
 	justify-content: space-between;
 }
 .site_navigation li {
 	list-style: none;
 	display: blok;
-	/* margin-right: 47px; */
 }
 .site_navigation a {
 	font-size: 16px;
@@ -126,7 +110,6 @@ padding-bottom: 0px;
 	background-image: url("../img/cart-icon.svg");
 }
 .container {
-	/*min-width: 1200px;*/
 	min-width: 1160px;
 	max-width: 1440px;
 	box-sizing: border-box;
@@ -169,14 +152,11 @@ padding-bottom: 0px;
 }
 .slider-list {
 	margin: 0 auto;
-	/* margin-left: 140px; */
-	/* margin-right: 140px; */
 	padding: 0;
 	list-style: none;
 }
 .slider-item {
 	width: 1160px;
-	/* max-width: 1440px; */
 	display: none;
 	margin: 0 auto;
 	padding: 53px 0 81px 0;
@@ -187,22 +167,6 @@ padding-bottom: 0px;
 	top: -7px;
 	left: 397px;
 }
-/*.slider-item:nth-child(1) {
-	background-image: url(../img/nerds-index-slide1.png);
-	background-repeat: no-repeat;
-	background-position: 100% 18px;
-}
-.slider-item:nth-child(2) {
-	background-image: url(../img/nerds-index-slide2.png);
-	background-repeat: no-repeat;
-	background-position: 100% 0;
-}
-
-.slider-item:nth-child(3) {
-	background-image: url(../img/nerds-index-slide3.png);
-	background-repeat: no-repeat;
-	background-position: 100% 20px;
-}*/
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
 	display: block;
 }
@@ -271,7 +235,6 @@ padding-bottom: 0px;
 	margin: 0 auto;
 	width: 1160px;
 	border-bottom: 2px solid #eeeeee;
-	/*outline: 1px solid red;*/
 }
 .products ul {
 	margin: 0 auto;
@@ -285,7 +248,6 @@ padding-bottom: 0px;
 	margin-right: 100px;
 	margin-bottom: 80px;
 	position: relative;
-	/*outline: 1px solid blue;*/
 }
 .products li:last-child {
 	margin-right: 0px;
@@ -340,7 +302,6 @@ padding-bottom: 0px;
 	width: 1160px;
 	display: flex;
 	border-bottom: 2px solid #eeeeee;
-	/*outline: 1px solid red;*/
 }
 .studio_description {
 	width: 660px;
@@ -348,7 +309,6 @@ padding-bottom: 0px;
 	margin-right: 120px;
 	display: flex;
 	flex-direction: column;
-	/*outline: 1px solid blue;*/
 }
 .studio_description b {
 	font-size: 45px;
@@ -375,7 +335,6 @@ padding-bottom: 0px;
 }
 .studio_description li{
 	list-style: none;
-	/*list-style-image: url(../img/list-style.png);*/
 	margin-bottom: 24px;
 	font-size: 16px;
 	line-height: 24px;
@@ -394,13 +353,10 @@ padding-bottom: 0px;
 	background-position: 0 0;
 }
 .studio_statistics {
-	/* margin-right: 0px; */
-	/* margin-left: auto; */
 	width: 380px;
 	min-height: 100px;
 	display: flex;
 	flex-direction: column;
-	/*outline: 1px solid blue;*/
 }
 .studio_statistics img {
 	margin-top: 40px;
@@ -433,7 +389,6 @@ padding-bottom: 0px;
 	margin-bottom: 79px;
 	width: 1160px;
 	border-bottom: 2px solid #eeeeee;
-	/*outline: 1px solid red;*/
 }
 .useful_links ul {
 	margin: 0px;
@@ -446,7 +401,6 @@ padding-bottom: 0px;
 	margin-right: 40px;
 	list-style: none;
 	position: relative;
-	/*outline: 1px solid blue;*/
 }
 .useful_links li::before {
 	content: "";
@@ -484,7 +438,6 @@ padding-bottom: 0px;
 	position: relative;
 	width:100%;
 	margin:0 auto;
-	/*outline: 1px solid green;*/
 }
 .mark {
 	position: absolute;
@@ -519,7 +472,6 @@ padding-bottom: 0px;
 	display: flex;
 	margin-top: 60px;
 	margin-bottom:30px;
-	/*outline: 1px solid green;*/
 	margin: 0 auto;
 }
 .social_links {
@@ -527,9 +479,6 @@ padding-bottom: 0px;
 	width: 260px;
 	min-height: 80px;
 	margin-top: 71px;
-	/* margin: auto; */
-	/* margin-left: 140px; */
-	/*outline: 1px solid red;*/
 }
 .social_links ul {
 	margin: 0px;
@@ -546,8 +495,6 @@ padding-bottom: 0px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
-	/*outline: 1px solid blue;*/
 }
 .social_button:hover,
 .social_button:focus {
@@ -562,17 +509,14 @@ padding-bottom: 0px;
 .for_frends {
 	width: 560px;
 	min-height: 80px;
-	/* margin: auto; */
 	margin-top: 77px;
 	margin-left: 139px;
 	display: flex;
 	flex-direction: column;
-	/*outline: 1px solid red;*/
 }
 .for_frends b {
 	font-size: 36px;
 	line-height: 36px;
-	/* margin-top: 20px; */
 }
 .for_frends p {
 	font-size: 16px;
@@ -674,19 +618,19 @@ padding-bottom: 0px;
 	top: 80px;
 	right: -20px;
 	margin: auto;
-    background: #ffffff;
-    opacity: 0.3;
+	background: #ffffff;
+	opacity: 0.3;
 	padding: 0px;
-    border: none;
+	border: none;
 }
 .button-close:hover,
 .button-close:focus {
 	background: #ffffff;
-    opacity: 1;
+	opacity: 1;
 }
 .button-close:active {
 	background: #ffffff;
-    opacity: 0.1;
+	opacity: 0.1;
 }
 .buttons-send {
 	margin: auto;
@@ -715,9 +659,7 @@ padding-bottom: 0px;
 .left_column {
 	width: 260px;
 	min-height: 1000px;
-	/*outline: 1px solid green;*/
 	position: relative;
-	/* margin-left: 140px; */
 }
 .filter_item {
 	margin: 0;
@@ -897,13 +839,11 @@ padding-bottom: 0px;
 .right_column {
 	width: 760px;
 	min-height: 1000px;
-	/*outline: 1px solid green;*/
 	margin-left: 140px;
 }
 .filter_sort {
 	display: flex;
 	flex-wrap: wrap;
-	/*outline: 1px solid red;*/
 	margin-bottom: 55px;
 }
 .filter_sort h3 {
@@ -1011,7 +951,6 @@ padding-bottom: 0px;
 	width: 200px;
 }
 .pagination {
-	/*outline: 1px solid green;*/
 	margin-top: 28px;
 	margin-bottom: 73px;
 }
